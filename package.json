@@ -1,11 +1,39 @@
 {
-  "name": "chatgpt-web",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build & next export"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.46.1",
+    "@arco-themes/react-fluxus": "^0.0.2",
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "ahooks": "^3.7.5",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "lodash": "^4.17.21",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.8",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@types/lodash": "^4.14.191",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.0.7",
+    "husky": "^8.0.2",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3"
   }
 }
