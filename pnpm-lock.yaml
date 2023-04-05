@@ -5,6 +5,7 @@ specifiers:
   '@arco-themes/react-fluxus': ^0.0.2
   '@svgr/webpack': ^6.5.1
   '@types/lodash': ^4.14.191
+  '@types/marked': ^4.0.8
   '@types/node': 18.14.6
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -14,9 +15,11 @@ specifiers:
   eslint: 8.35.0
   eslint-config-next: 13.2.3
   express: ^4.18.2
+  highlight.js: ^11.7.0
   http-proxy-middleware: ^2.0.6
   husky: ^8.0.2
   lodash: ^4.17.21
+  marked: ^4.3.0
   next: 13.2.3
   prettier: ^2.7.1
   pretty-quick: ^3.1.3
@@ -35,8 +38,10 @@ dependencies:
   eslint: 8.35.0
   eslint-config-next: 13.2.3_ycpbpc6yetojsgtrx3mwntkhsu
   express: 4.18.2
+  highlight.js: 11.7.0
   http-proxy-middleware: 2.0.6
   lodash: 4.17.21
+  marked: 4.3.0
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -46,6 +51,7 @@ dependencies:
 devDependencies:
   '@svgr/webpack': 6.5.1
   '@types/lodash': 4.14.192
+  '@types/marked': 4.0.8
   '@types/styled-components': 5.1.26
   babel-plugin-styled-components: 2.0.7_styled-components@5.3.8
   husky: 8.0.3
@@ -1812,6 +1818,10 @@ packages:
     resolution: {integrity: sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==}
     dev: true
 
+  /@types/marked/4.0.8:
+    resolution: {integrity: sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==}
+    dev: true
+
   /@types/minimatch/3.0.5:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
@@ -3354,6 +3364,11 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
+  /highlight.js/11.7.0:
+    resolution: {integrity: sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /hoist-non-react-statics/3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
@@ -3770,6 +3785,12 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+    dev: false
+
+  /marked/4.3.0:
+    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: false
 
   /mdn-data/2.0.14:

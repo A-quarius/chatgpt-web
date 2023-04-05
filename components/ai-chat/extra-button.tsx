@@ -5,7 +5,6 @@ import { Button, Input, Modal } from '@arco-design/web-react'
 import React, { useMemo, useState } from 'react'
 import Email from '@/assets/email.svg'
 import { IconCloseCircle } from '@arco-design/web-react/icon'
-import { ChooseStartMode } from '@/components/ai-chat/choose-start-mode'
 
 interface Props {
   step: 'chat' | 'form' | 'list' | 'detail'

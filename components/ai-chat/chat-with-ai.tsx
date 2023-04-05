@@ -33,6 +33,7 @@ export const ChatWithAi = () => {
   const [asking, setAsking] = useState(false)
   useEffect(() => {
     ;(async () => {
+      await aiService.test()
       // TODO: 需要先调用接口获取一下之前的聊天记录
       // 初始化聊天信息
       // const backData = await aiService.sendMessageToAi('')
